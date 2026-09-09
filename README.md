@@ -94,8 +94,8 @@ eva-ais/
 ### Итоги (тесты model_test_results.json)
 
 - **Всего моделей протестировано:** 562
-- **Работают:** 27 (Google Gemini gen-lang key, OmniRoute/Groq routes)
-- **Не работают:** 524 (OpenRouter платные — нужен баланс; OpenRouter free — rate-limited; Groq/Cerebras 403)
+- **Работают:** 27 (Google Gemini gen-lang key ✓, OmniRoute/Groq routes ✓, 6 OpenRouter free ✓)
+- **Не работают:** 524 (OpenRouter платные — нужен баланс; OpenRouter free — rate-limited; Groq/Cerebras 403; OpenCode — API key не настроен)
 
 ### Итоги (fresh_models.py — 2025–2026)
 
@@ -104,5 +104,17 @@ eva-ais/
 - **Платных:** 546
 - **Новых (не в каталоге):** 30+
 - **Источники:** OpenRouter (431), Mistral (46), CloudFlare AI (65), HuggingFace (25), Gemini API (21)
+- **Новые бесплатные провайдеры:** Kilo Code (**14+ free models**, $0.00/1M), Cloudflare Workers AI (65 models, 10K neurons/day free tier)
+
+### Бесплатные модели по провайдерам
+
+| Провайдер | Бесплатных моделей | Работают | Примечание |
+|---|---|---|---|
+| Google Gemini | 10 | ✅ 10 | Free Quota (15 RPM/1M TPM) |
+| OmniRoute | 11 | ✅ 11 | Через локальный daemon |
+| OpenRouter | 21 | ✅ 6 | 15 rate-limited |
+| OpenCode | 2 | ❌ | OPENCODE_API_KEY не настроен |
+| Kilo Code | 14+ | ❓ | $0.00/1M, требует аккаунт |
+| Cloudflare AI | 65 | ❓ | 10K neurons/day free tier |
 
 > Запустите `python3 scripts/scan_all_llms.py` для свежего отчёта.
