@@ -25,3 +25,9 @@ Fast auto-complete, short snippet transformations, and inline suggestions.
 MODEL_ID=opencode/go-fast
 PROVIDER=OpenCode AI
 ```
+
+## Test Status
+
+- **Status:** FAILED
+- **Reason:** `OPENCODE_API_KEY` not configured; backend returns "All connection attempts failed"
+- **Free tier:** Dev Tier ($0.00) — requires OpenCode API key to activate
