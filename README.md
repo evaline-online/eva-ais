@@ -8,23 +8,46 @@
 # Сканировать всю систему и обновить каталог
 python3 scripts/scan_all_llms.py
 
-# Просмотр каталога
-open reports/system_scan_report.md
+# Тестировать все модели из каталога
+python3 scripts/test_all_models.py
+
+# Получить свежие модели 2025-2026 гг. с лидербордов
+python3 scripts/fresh_models.py
 ```
+
+### Отчёты
+
+| Файл | Описание |
+|---|---|
+| `reports/system_scan_report.md` | Полный Markdown-отчёт по сканеру |
+| `reports/models_catalog.json` | Машиночитаемый JSON-каталог (56 моделей) |
+| `reports/models_catalog.tsv` | TSV для анализа в таблицах |
+| `reports/model_test_results.json` | Результаты тестов всех 562 моделей (27 работают) |
+| `reports/model_test_results.tsv` | TSV-версия результатов тестов |
+| `reports/model_test_report.md` | Markdown-отчёт по тестам |
+| `reports/fresh_models_comparison.md` | Топ-30 платных и бесплатных моделей 2025–2026 |
+| `reports/fresh_models_raw.json` | Сырые данные с 8 источников (588 моделей) |
 
 ## Структура репозитория
 
 ```
 eva-ais/
 ├── scripts/
-│   └── scan_all_llms.py          # Системный сканер (GCP, API, локальные сервисы, конфиги)
+│   ├── scan_all_llms.py          # Системный сканер (GCP, API, локальные сервисы, конфиги)
+│   ├── test_all_models.py        # Тестер: проверяет статус каждой модели
+│   └── fresh_models.py           # Сбор свежих моделей 2025-2026 с лидербордов
 ├── reports/
-│   ├── system_scan_report.md     # Полный Markdown-отчёт
+│   ├── system_scan_report.md     # Полный Markdown-отчёт сканера
 │   ├── models_catalog.json       # Машиночитаемый JSON-каталог
-│   └── models_catalog.tsv        # TSV для анализа в таблицах
-├── free-models/                  # Бесплатные модели и модели с бесплатной квотой
-├── paid-models/                  # Платные (pay-per-use) модели
-└── providers/                    # Маркдаун-файлы по каждому провайдеру
+│   ├── models_catalog.tsv        # TSV для анализа в таблицах
+│   ├── model_test_results.json   # Результаты тестов всех моделей
+│   ├── model_test_results.tsv    # TSV-версия результатов тестов
+│   ├── model_test_report.md      # Markdown-отчёт по тестам
+│   ├── fresh_models_comparison.md# Топ-30 платных/бесплатных моделей 2025-2026
+│   └── fresh_models_raw.json     # Сырые данные с 8 источников
+├── free-models/                  # Маркдаун-файлы бесплатных моделей (31 файлов)
+├── paid-models/                  # Маркдаун-файлы платных моделей (25 файлов)
+└── providers/                    # Маркдаун-файлы по каждому провайдеру (11 файлов)
 ```
 
 ## Сканер (`scan_all_llms.py`)
@@ -63,9 +86,23 @@ eva-ais/
 
 ### Итоги (локальный каталог)
 
-- **Всего моделей в каталоге:** 63
+- **Моделей в каталоге (scan_all_llms.py):** 56
 - **Бесплатных / с бесплатной квотой:** 31
 - **Open-Weights (бесплатно):** 7
 - **Платных (pay-per-use):** 25
+
+### Итоги (тесты model_test_results.json)
+
+- **Всего моделей протестировано:** 562
+- **Работают:** 27 (Google Gemini gen-lang key, OmniRoute/Groq routes)
+- **Не работают:** 524 (OpenRouter платные — нужен баланс; OpenRouter free — rate-limited; Groq/Cerebras 403)
+
+### Итоги (fresh_models.py — 2025–2026)
+
+- **Всего свежих моделей:** 588
+- **Бесплатных:** 42
+- **Платных:** 546
+- **Новых (не в каталоге):** 30+
+- **Источники:** OpenRouter (431), Mistral (46), CloudFlare AI (65), HuggingFace (25), Gemini API (21)
 
 > Запустите `python3 scripts/scan_all_llms.py` для свежего отчёта.
