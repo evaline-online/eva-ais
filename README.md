@@ -100,11 +100,22 @@ eva-ais/
 ### Итоги (fresh_models.py — 2025–2026)
 
 - **Всего свежих моделей:** 588
-- **Бесплатных:** 42
+- **Бесплатных:** 42+ (OpenRouter 21, Kilo Code 14+, Cloudflare 65, Gemini Free Quota, OpenCode 2, FreeLLMAPI 605 models/34 providers)
 - **Платных:** 546
 - **Новых (не в каталоге):** 30+
 - **Источники:** OpenRouter (431), Mistral (46), CloudFlare AI (65), HuggingFace (25), Gemini API (21)
-- **Новые бесплатные провайдеры:** Kilo Code (**14+ free models**, $0.00/1M), Cloudflare Workers AI (65 models, 10K neurons/day free tier)
+- **Новые бесплатные провайдеры:** Kilo Code (14+ free, $0.00/1M), FreeLLMAPI (605 models/34 providers, 7.4B tokens/mo), Cloudflare Workers AI (65 models, 10K neurons/day)
+
+### Агрегаторы бесплатных LLM
+
+| Сайт | Моделей | Провайдеров | Фичи |
+|---|---|---|---|
+| FreeLLMAPI | 605 | 34 | $0/self-hosted router, 7.4B tokens/mo |
+| Free LLM API Hub | 331+ | 25+ | Verified, daily sync |
+| Token Gratis | 323 | 25 | Индонезийский, fallback chains |
+| Kilo Code | 14+ | 8+ | Live leaderboard, кодинг-бенчмарки |
+| free-llm-api-watch | — | — | GitHub tracker (daily commits) |
+| Free-LLM Atlas | 46+ | 46+ | Automated probing |
 
 ### Бесплатные модели по провайдерам
 
@@ -116,5 +127,6 @@ eva-ais/
 | OpenCode | 2 | ❌ | OPENCODE_API_KEY не настроен |
 | Kilo Code | 14+ | ❓ | $0.00/1M, требует аккаунт |
 | Cloudflare AI | 65 | ❓ | 10K neurons/day free tier |
+| FreeLLMAPI | 100+ | ❓ | Агрегатор 34 провайдеров |
 
 > Запустите `python3 scripts/scan_all_llms.py` для свежего отчёта.
