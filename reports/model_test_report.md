@@ -329,6 +329,8 @@ Here's a thinking process:
 | qwen/qwen-2.5-coder-32b-instruct:free | OpenRouter | failed | 404 | {"error":{"message":"This model is unavailable for free. The paid version is available now - use this slug instead: qwen/qwen-2.5-coder-32b-instruct", |
 | thinkingmachines/inkling-small:free | OpenRouter | failed | 403 | {"error":{"message":"thinkingmachines/inkling-small:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity a |
 | thinkingmachines/inkling:free | OpenRouter | failed | 403 | {"error":{"message":"thinkingmachines/inkling:free is only available on agentic harnesses. Try plugging it into a coding agent or productivity app lis |
+| opencode/go-coder-32b | OpenCode AI | failed | 400 | Free Dev Tier ($0.00), but OPENCODE_API_KEY not configured. Backend error: "All connection attempts failed". |
+| opencode/go-fast | OpenCode AI | failed | 400 | Free Dev Tier ($0.00), but OPENCODE_API_KEY not configured. Backend error: "All connection attempts failed". |
 
 ## Платные модели — Working
 
@@ -351,8 +353,6 @@ Here's a thinking process:
 | omniroute/claude-3.5-sonnet | OmniRoute | failed | 400 | {"error":{"message":"/chat/completions: Invalid model name passed in model=omniroute/claude-3.5-sonnet. Call `/v1/models` to view available models for |
 | omniroute/deepseek-r1 | OmniRoute | failed | 400 | {"error":{"message":"/chat/completions: Invalid model name passed in model=omniroute/deepseek-r1. Call `/v1/models` to view available models for your  |
 | omniroute/gemini-2.5-pro | OmniRoute | failed | 400 | {"error":{"message":"/chat/completions: Invalid model name passed in model=omniroute/gemini-2.5-pro. Call `/v1/models` to view available models for yo |
-| opencode/go-coder-32b | OpenCode AI | failed | 400 | {"error":{"message":"opencode/go-coder-32b is not a valid model ID","code":400},"user_id":"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg"} |
-| opencode/go-fast | OpenCode AI | failed | 400 | {"error":{"message":"opencode/go-fast is not a valid model ID","code":400},"user_id":"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg"} |
 | aion-labs/aion-2.0 | OpenRouter | failed | 403 | {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/e9de15efe0312af0ee76de8f339e3f0bf |
 | aion-labs/aion-3.0 | OpenRouter | failed | 403 | {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/e9de15efe0312af0ee76de8f339e3f0bf |
 | aion-labs/aion-3.0-mini | OpenRouter | failed | 403 | {"error":{"message":"Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/e9de15efe0312af0ee76de8f339e3f0bf |
@@ -811,7 +811,7 @@ Working: 11 | Failed: 22 | Unavailable: 0 | Total: 38
 
 ### OpenCode AI
 
-Working: 0 | Failed: 2 | Unavailable: 0 | Total: 2
+Working: 0 | Failed: 2 | Unavailable: 0 | Total: 2 | Free Dev Tier ($0.00), but OPENCODE_API_KEY not configured
 
 ### OpenRouter
 

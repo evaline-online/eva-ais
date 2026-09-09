@@ -161,10 +161,10 @@
     "tier": "OpenCode Platform",
     "source": "local-backend",
     "test_type": "openrouter",
-    "is_free": false,
+    "is_free": true,
     "status": "failed",
     "http_code": 400,
-    "detail": "{\"error\":{\"message\":\"opencode/go-coder-32b is not a valid model ID\",\"code\":400},\"user_id\":\"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg\"}",
+    "detail": "{\"error\":{\"message\":\"opencode/go-coder-32b is not a valid model ID\",\"code\":400},\"user_id\":\"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg\"} \u2014 Free Dev Tier ($0.00), but OPENCODE_API_KEY not configured. Direct backend test: 'All connection attempts failed'.",
     "response_time_s": 0.03
   },
   {
@@ -173,10 +173,10 @@
     "tier": "OpenCode Platform",
     "source": "local-backend",
     "test_type": "openrouter",
-    "is_free": false,
+    "is_free": true,
     "status": "failed",
     "http_code": 400,
-    "detail": "{\"error\":{\"message\":\"opencode/go-fast is not a valid model ID\",\"code\":400},\"user_id\":\"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg\"}",
+    "detail": "{\"error\":{\"message\":\"opencode/go-fast is not a valid model ID\",\"code\":400},\"user_id\":\"user_3HLeY7tYu6sZcGHpPdoSE3u7hUg\"} \u2014 Free Dev Tier ($0.00), but OPENCODE_API_KEY not configured. Direct backend test: 'All connection attempts failed'.",
     "response_time_s": 0.02
   },
   {
@@ -6140,7 +6140,7 @@
     "is_free": true,
     "status": "working",
     "http_code": 200,
-    "detail": "**Reasoning**\n\n- The original request was: “Hello, reply with exactly: OK”.  \n- The instruction was",
+    "detail": "**Reasoning**\n\n- The original request was: \u201cHello, reply with exactly: OK\u201d.  \n- The instruction was",
     "response_time_s": 1.3
   },
   {
