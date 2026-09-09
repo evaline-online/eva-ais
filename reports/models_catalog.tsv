@@ -1,0 +1,57 @@
+id	name	provider	category	tier	source	context_window	max_output_tokens	free_or_paid	input_price_usd	output_price_usd
+gemini-3.8-flash	Gemini 3.8 Flash	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.075 (Paid)	$0.00 (Free) / $0.300 (Paid)
+gemini-3.1-pro	Gemini 3.1 Pro	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	2097152	8192	free	$0.00 (Free) / $1.25 (Paid)	$0.00 (Free) / $5.00 (Paid)
+gemini-3.1-flash	Gemini 3.1 Flash	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.050 (Paid)	$0.00 (Free) / $0.200 (Paid)
+gemini-2.5-flash	Gemini 2.5 Flash	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.075 (Paid)	$0.00 (Free) / $0.30 (Paid)
+gemini-2.5-pro	Gemini 2.5 Pro	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	2097152	8192	free	$0.00 (Free) / $1.25 (Paid)	$0.00 (Free) / $5.00 (Paid)
+gemini-2.0-flash	Gemini 2.0 Flash	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.10 (Paid)	$0.00 (Free) / $0.40 (Paid)
+gemini-2.0-flash-lite	Gemini 2.0 Flash Lite	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.075 (Paid)	$0.00 (Free) / $0.30 (Paid)
+gemini-2.0-flash-thinking-exp	Gemini 2.0 Flash Thinking Exp	Google DeepMind	Google Gemini (Next-Gen)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.100 (Paid)	$0.00 (Free) / $0.400 (Paid)
+gemini-1.5-pro	Gemini 1.5 Pro	Google DeepMind	Google Gemini (Long-Context)	Free Quota + Paid	local-backend	2097152	8192	free	$0.00 (Free) / $1.25 (Paid)	$0.00 (Free) / $5.00 (Paid)
+gemini-1.5-flash	Gemini 1.5 Flash	Google DeepMind	Google Gemini (Long-Context)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.075 (Paid)	$0.00 (Free) / $0.30 (Paid)
+gemini-1.5-flash-8b	Gemini 1.5 Flash 8B	Google DeepMind	Google Gemini (Long-Context)	Free Quota + Paid	local-backend	1048576	8192	free	$0.00 (Free) / $0.0375 (Paid)	$0.00 (Free) / $0.15 (Paid)
+text-embedding-004	Text-Embedding-004	Google DeepMind	Google Specialized & Embeddings	Free Quota + Paid	local-backend	2048	768	free	$0.00 (Free) / $0.025 (Paid)	$0.00 (Embeddings output zero billable generation tokens)
+deepseek/deepseek-r1:free	DeepSeek R1 (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	64000	8192	free	$0.00 (100% Free)	$0.00 (100% Free)
+meta-llama/llama-3.3-70b-instruct:free	Llama 3.3 70B Instruct (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	128000	4096	free	$0.00 (100% Free)	$0.00 (100% Free)
+meta-llama/llama-3.3-70b:free	Llama 3.3 70B (Free on OpenRouter Alias)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	128000	4096	free	$0.00 (100% Free)	$0.00 (100% Free)
+google/gemini-2.0-flash-exp:free	Gemini 2.0 Flash Exp (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	1048576	8192	free	$0.00 (100% Free)	$0.00 (100% Free)
+qwen/qwen-2.5-coder-32b-instruct:free	Qwen 2.5 Coder 32B (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	128000	8192	free	$0.00 (100% Free)	$0.00 (100% Free)
+mistralai/mistral-7b-instruct:free	Mistral 7B Instruct (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	32768	4096	free	$0.00 (100% Free)	$0.00 (100% Free)
+google/gemini-2.0-pro-exp-02-05:free	Gemini 2.0 Pro Exp 02-05 (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	2097152	8192	free	$0.00 (100% Free)	$0.00 (100% Free)
+microsoft/phi-3-medium-128k-instruct:free	Phi-3 Medium 128k Instruct (Free on OpenRouter)	OpenRouter	OpenRouter Free Models	100% Free Community	local-backend	128000	4096	free	$0.00 (100% Free)	$0.00 (100% Free)
+omniroute/gemini-2.5-pro	OmniRoute Gemini 2.5 Pro (Edge Router)	OmniRoute	OmniRoute Daemon Cluster	OmniRoute Daemon	local-backend	2097152	8192	free	$0.00 (Self-Hosted) / $1.25 (Upstream)	$0.00 (Self-Hosted) / $5.00 (Upstream)
+omniroute/deepseek-r1	OmniRoute DeepSeek R1 (Daemon Cluster)	OmniRoute	OmniRoute Daemon Cluster	OmniRoute Daemon	local-backend	64000	8192	free	$0.00 (Local) / $0.55 (Upstream)	$0.00 (Local) / $2.19 (Upstream)
+opencode/go-coder-32b	OpenCode Go Coder 32B	OpenCode AI	OpenCode Go Platforms	OpenCode Platform	local-backend	64000	8192	free	$0.00 (Dev Tier) / $0.20 (Prod)	$0.00 (Dev Tier) / $0.60 (Prod)
+opencode/go-fast	OpenCode Go Fast (Low-Latency)	OpenCode AI	OpenCode Go Platforms	OpenCode Platform	local-backend	32768	4096	free	$0.00 (Dev Tier) / $0.08 (Prod)	$0.00 (Dev Tier) / $0.24 (Prod)
+gemma-2-27b-it	Gemma 2 (27B Instruct)	Google DeepMind	Google Gemma (Open Weights)	Open Weights	local-backend	8192	4096	open_weights	$0.00 (Free) / $0.27 (Vertex AI)	$0.00 (Free) / $0.27 (Vertex AI)
+gemma-2-9b-it	Gemma 2 (9B Instruct)	Google DeepMind	Google Gemma (Open Weights)	Open Weights	local-backend	8192	4096	open_weights	$0.00 (Free) / $0.10 (Vertex AI)	$0.00 (Free) / $0.10 (Vertex AI)
+gemma-2-2b-it	Gemma 2 (2B Instruct)	Google DeepMind	Google Gemma (Open Weights)	Open Weights	local-backend	8192	4096	open_weights	$0.00 (Free) / $0.04 (Vertex AI)	$0.00 (Free) / $0.04 (Vertex AI)
+codegemma-7b-it	CodeGemma (7B Instruct)	Google DeepMind	Google Specialized & Embeddings	Open Weights	local-backend	8192	4096	open_weights	$0.00 (Free) / $0.10 (Vertex AI)	$0.00 (Free) / $0.10 (Vertex AI)
+codegemma-2b	CodeGemma (2B Base/FIM)	Google DeepMind	Google Specialized & Embeddings	Open Weights	local-backend	8192	2048	open_weights	$0.00 (Free) / $0.04 (Vertex AI)	$0.00 (Free) / $0.04 (Vertex AI)
+recurrentgemma-2b-it	RecurrentGemma (2B Instruct)	Google DeepMind	Google Specialized & Embeddings	Open Weights	local-backend	8192	4096	open_weights	$0.00 (Free) / $0.04 (Vertex AI)	$0.00 (Free) / $0.04 (Vertex AI)
+deepseek-r1	DeepSeek R1 (Vertex AI)	DeepSeek	DeepSeek on Google Cloud	Open Weights	local-backend	64000	8192	open_weights	$0.55	$2.19
+anthropic/claude-3.7-sonnet	Claude 3.7 Sonnet (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	200000	8192	paid	$3.00	$15.00
+anthropic/claude-3.5-sonnet	Claude 3.5 Sonnet (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	200000	8192	paid	$3.00	$15.00
+anthropic/claude-3.5-haiku	Claude 3.5 Haiku (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	200000	8192	paid	$0.80	$4.00
+openai/o3-mini	OpenAI o3-mini (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	200000	100000	paid	$1.10	$4.40
+openai/o1	OpenAI o1 (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	200000	100000	paid	$15.00	$60.00
+openai/gpt-4o	OpenAI GPT-4o (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	128000	16384	paid	$2.50	$10.00
+openai/gpt-4o-mini	OpenAI GPT-4o-mini (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	128000	16384	paid	$0.15	$0.60
+deepseek/deepseek-r1	DeepSeek R1 (OpenRouter Paid)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	64000	8192	paid	$0.55	$2.19
+qwen/qwen-2.5-coder-32b-instruct	Qwen 2.5 Coder 32B (OpenRouter Paid)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	128000	8192	paid	$0.18	$0.18
+meta-llama/llama-3.1-405b-instruct	Meta Llama 3.1 405B Instruct (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	128000	4096	paid	$2.50	$2.50
+mistralai/codestral-2501	Codestral 25.01 (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	256000	8192	paid	$0.30	$0.90
+x-ai/grok-2-1212	xAI Grok 2 (1212) (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	131072	4096	paid	$2.00	$10.00
+cohere/command-r-plus-08-2024	Cohere Command R+ (08-2024) (OpenRouter)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	128000	4096	paid	$2.50	$10.00
+openrouter/deepseek-chat	DeepSeek V3 (OpenRouter Premium)	OpenRouter	OpenRouter Premium	OpenRouter Paid	local-backend	64000	8192	paid	$0.14	$0.28
+claude-3-7-sonnet	Claude 3.7 Sonnet (Vertex AI)	Anthropic	Anthropic Claude on Google Cloud	Vertex AI Enterprise	local-backend	200000	8192	paid	$3.00	$15.00
+claude-3-5-sonnet	Claude 3.5 Sonnet (Vertex AI)	Anthropic	Anthropic Claude on Google Cloud	Vertex AI Enterprise	local-backend	200000	8192	paid	$3.00	$15.00
+claude-3-5-haiku	Claude 3.5 Haiku (Vertex AI)	Anthropic	Anthropic Claude on Google Cloud	Vertex AI Enterprise	local-backend	200000	8192	paid	$0.80	$4.00
+llama-3.3-70b-instruct	Meta Llama 3.3 (70B Instruct - Vertex AI)	Meta	Meta Llama 3 on Google Cloud	Vertex AI Enterprise	local-backend	128000	4096	paid	$0.70	$0.90
+llama-3.2-90b-vision-instruct	Meta Llama 3.2 (90B Vision - Vertex AI)	Meta	Meta Llama 3 on Google Cloud	Vertex AI Enterprise	local-backend	128000	4096	paid	$0.90	$1.20
+llama-3.1-405b-instruct	Meta Llama 3.1 (405B Instruct - Vertex AI)	Meta	Meta Llama 3 on Google Cloud	Vertex AI Enterprise	local-backend	128000	4096	paid	$3.50	$3.50
+mistral-large-2411	Mistral Large 2 (Vertex AI)	Mistral AI	Mistral AI on Google Cloud	Vertex AI Enterprise	local-backend	128000	4096	paid	$2.00	$6.00
+codestral-2501	Codestral 25.01 (Vertex AI)	Mistral AI	Mistral AI on Google Cloud	Vertex AI Enterprise	local-backend	256000	4096	paid	$0.30	$0.90
+jamba-1.5-large	AI21 Jamba 1.5 Large	AI21 Labs	AI21 Labs & Cohere on Google Cloud	Vertex AI Enterprise	local-backend	256000	4096	paid	$2.00	$8.00
+command-r-plus	Cohere Command R+	Cohere	AI21 Labs & Cohere on Google Cloud	Vertex AI Enterprise	local-backend	128000	4096	paid	$2.50	$10.00
+omniroute/claude-3.5-sonnet	OmniRoute Claude 3.5 Sonnet (Edge Proxy)	OmniRoute	OmniRoute Daemon Cluster	OmniRoute Daemon	local-backend	200000	8192	paid	$3.00	$15.00
